@@ -1,7 +1,4 @@
 import React from "react";
-import location from '../../.././images/page_1/header/location.svg'
-import clock from '../../.././images/page_1/header/clock.svg'
-import whatsUpp from '../../.././images/page_1/header/whatsUpp.svg'
 import '../../.././css/style.css'
 
 

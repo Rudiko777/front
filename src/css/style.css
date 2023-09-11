@@ -76,3 +76,90 @@
     width: 21px;
     height: 21px;
 }
+
+.header-inner-main{
+    padding: 30px 0 30px;
+}
+
+.header-main-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-main-sidebar-link{
+    margin-right: 20px;
+}
+.header-main-advertisement{
+    max-width: 170px;
+    margin-left: 23px;
+    margin-right: 29px;
+}
+
+.header-main-logo-container {
+    max-width: 198px;
+    padding-right: 21px;
+    display: block;
+    position: relative;
+}
+
+.header-main-logo-container:after{
+    content: '';
+    position: absolute;
+    background-color: #C2C2C4;
+    width: 1px;
+    height: 35px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0
+}
+
+
+.header-main-advertisement-time{
+    color: #fff;
+    padding: 0 4px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.header-main-navigation-list{
+    display: flex;
+    gap: 16px;
+}
+
+.header-main-navigation-item{
+    font-size: 14px;
+}
+
+.header-main-connection{
+    display: flex;
+    gap: 20px;
+}
+
+.header-main-connection-tel{
+    display: flex;
+    gap: 12px;
+}
+
+.header-main-connection-tel-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 213px;
+}
+
+.header-main-connection-tel-numbers-first{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header-main-connection-btn{
+    border: none;
+    background-color: #CA0100;
+    border-radius: 6px;
+    padding: 16px 28px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
