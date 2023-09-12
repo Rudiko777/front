@@ -78,7 +78,7 @@
 }
 
 .header-inner-main{
-    padding: 30px 0 30px;
+    padding-top: 30px
 }
 
 .header-main-box{
@@ -128,9 +128,18 @@
     gap: 16px;
 }
 
+/*ПРАКА 2 */
+
 .header-main-navigation-item{
     font-size: 14px;
+    transition: color 0.3s linear;
 }
+
+.header-main-navigation-item:hover{
+    color: red;
+}
+
+/*ПРАКА 2 */
 
 .header-main-connection{
     display: flex;
@@ -162,4 +171,152 @@
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
+}
+
+.header-catalogs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-catalogs-list{
+    display: flex;
+    gap: 86px;
+}
+
+.header-catalogs-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-catalog-item-title{
+    text-transform: uppercase;
+}
+
+
+.interactive-list{
+    display: flex;
+    gap: 42px;
+}
+
+.header-catalogs{
+    padding-top: 32px;
+}
+
+.carsInStock-title{
+    color: #262626;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.specialOffers-title,
+.reviews-title{
+    color: #262626;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.reviews-item{
+    border-radius: 25px;
+}
+
+.reviews-item-box{
+
+    min-width: 446px;
+}
+
+
+.reviews-item-back{
+    position: relative;
+    margin: 0 auto;
+    padding: 60px 0;
+    z-index: 1;
+}
+
+.reviews-item-push{
+    position: absolute;
+    top: 112px;
+    left: 192px;
+    content: '';
+    z-index: 5;
+}
+
+.reviews-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 29px;
+}
+
+.reviews-title{
+    margin-bottom: 44px;
+}
+
+.reviews-item-box-first{
+    background-color: #262626;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+}
+
+.reviews-item-box-second{
+    padding: 32px 23px 39px 30px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #F2F2F2;
+}
+
+.reviews-item-author{
+    margin-bottom: 30px;
+}
+
+.reviews-item-author-text{
+    color: #737373;
+    margin-bottom: 21px;
+}
+
+.reviews-item-moreInfo{
+    width: 188px;
+    background-color: #E1E1E1;
+    padding: 10px 15px 6px 20px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.reviews-item-moreInfo p{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+}
+
+.footer-containerFluid{
+    margin: 0 auto;
+    max-width: 1810px;
+    background-color: #262626;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    color: #fff;
+}
+
+.footer-navigation{
+    padding: 42px 0 39px;
+}
+
+.footer-nav-item-link{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer-nav-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-head-line{
+    border-bottom: 1px solid rgba(255,255, 255, 0.2);
 }
