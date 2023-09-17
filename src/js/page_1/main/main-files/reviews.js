@@ -75,7 +75,7 @@ class Reviews extends React.Component{
                                 </p>
                                 <button className={"reviews-item-moreInfo"} type={"submit"}>
                                     <p>Подробнее</p>
-                                    <img src={point}/>
+                                    <img src={point} alt={"point"}/>
                                 </button>
                             </div>
                         </div>

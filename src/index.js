@@ -10,8 +10,7 @@ import HeaderTop from "./js/page_1/header/header";
 import HeaderMain from "./js/page_1/header/header-main";
 import MainJs from "./js/page_1/main/mainJs";
 import FooterMain from "./js/page_1/footer/footerGeneral";
-import NavigationMain from "./js/page_1/header/navigation";
-import Catalogs from "./js/page_1/header/catalogs";
+
 
 
 const header = ReactDOM.createRoot(document.getElementById('header'))
