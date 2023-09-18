@@ -3,7 +3,7 @@ import '../../.././css/style.css'
 import logo from '../../../images/page_1/header-main/logo.svg'
 import sidebar from '../../../images/page_1/header-main/sidebar.svg'
 import NavigationMain from "./navigation";
-import ConnectionMain from "./connection";
+import {ConnectionMain} from "./connection";
 import Catalogs from "./catalogs";
 
 class HeaderMain extends React.Component{
