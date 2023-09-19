@@ -1,39 +1,35 @@
-import '../App.css';
 import React from "react";
+import HeaderTop from "./page_1/header/header";
+import HeaderMain from "./page_1/header/header-main";
+import MainJs from "./page_1/main/mainJs";
+import FooterMain from "./page_1/footer/footerGeneral";
 
 
-class Text extends React.Component{
-  render() {
-    return(
-        <h1>{this.props.title}</h1>
-    )
-  }
-}
-
-class Header extends React.Component{
-  constructor(props) {
-      super(props);
-      this.state = {
-          helpText:"Hello World"
-      };
-      this.inputClick = this.inputClick.bind(this);
-  }
-
-  render(){
-    return(
-        <div className={"general"}>
-          <Text title={"Автосалон"}/>
-          <h1>{this.state.helpText}</h1>
-          <input placeholder={this.state.helpText} onClick={this.inputClick}/>
-          <p>{this.state.helpText === "Hello World" ? "True" : "False"}</p>
+export const App = ()=> {
+    return (
+        <div className={"App"}>
+            <div className={"wrapper"}>
+                <header className={"header"}>
+                    <div className="header-top-color">
+                        <div className="container">
+                            <HeaderTop />
+                        </div>
+                    </div>
+                    <div className="header-main">
+                        <div className="container">
+                            <HeaderMain />
+                        </div>
+                    </div>
+                </header>
+                <main className={"main"}>
+                    <MainJs />
+                </main>
+                <footer className={"footer"}>
+                    <FooterMain />
+                </footer>
+            </div>
         </div>
     )
-  }
-
-  inputClick () {
-      this.setState({helpText: "Changed"});
-      console.log('1');
-  }
 }
 
-export default Header;
+

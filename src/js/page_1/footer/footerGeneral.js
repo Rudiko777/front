@@ -98,6 +98,7 @@ class FooterMain extends React.Component{
                         <FooterInteractive />
                     </div>
                 </div>
+                <MyContacts />
             </div>
         )
     }

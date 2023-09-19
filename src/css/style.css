@@ -1,8 +1,10 @@
+@import "global.css";
+@import "reset.css";
+@import "fonts.css";
+
+
 .header-top-color{
     background-color: #EFF0F0;
-}
-
-.header-inner{
     padding: 13px 0 15px;
 }
 
@@ -77,11 +79,9 @@
     height: 21px;
 }
 
-.header-inner-main{
-    padding-top: 30px
-}
 
 .header-main-box{
+    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -139,6 +139,13 @@
     color: red;
 }
 
+a:active{
+    color: green;
+}
+
+.header-main-navigation-item-link:visited{
+    color: purple;
+}
 /*ПРАКА 2 */
 
 .header-main-connection{
@@ -319,4 +326,18 @@
 
 .footer-head-line{
     border-bottom: 1px solid rgba(255,255, 255, 0.2);
+}
+
+.komb-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.komb-1 .komb-1-child{
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.komb-1 > .komb-1-child{
+    color: red;
 }

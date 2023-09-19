@@ -1,0 +1,11 @@
+.carItem{
+    display: flex;
+    gap: 10px;
+}
+
+.carItemTitle{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 290%;
+}
