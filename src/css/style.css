@@ -341,3 +341,9 @@ a:active{
 .komb-1 > .komb-1-child{
     color: red;
 }
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: white;
+    outline: 4px solid #CA0100;
+    opacity: 0.52;
+}

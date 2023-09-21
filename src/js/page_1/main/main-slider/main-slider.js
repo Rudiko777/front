@@ -68,6 +68,64 @@ export const MainSlider = ()=>{
                         <div className={"swiper-pagination"}></div>
                     </div>
                 </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.mainSliderCard}>
+                        <img className={styles.mainSliderAuto} src={auto}/>
+                        <div className="container">
+                            <p className={styles.mainSliderRec}>
+                                Осталось всего 10 авто!
+                            </p>
+                            <h1 className={styles.mainSliderTitle}>
+                                Грандиозная распродажа<br/>тестового парка!
+                            </h1>
+                            <p className={styles.mainSliderTEXT}>
+                                Узнай свою цену!
+                            </p>
+                        </div>
+
+                        <NavigationTen />
+
+                        <div className={"swiper-pagination"}></div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.mainSliderCard}>
+                        <img className={styles.mainSliderAuto} src={auto}/>
+                        <div className="container">
+                            <p className={styles.mainSliderRec}>
+                                Осталось всего 10 авто!
+                            </p>
+                            <h1 className={styles.mainSliderTitle}>
+                                Грандиозная распродажа<br/>тестового парка!
+                            </h1>
+                            <p className={styles.mainSliderTEXT}>
+                                Узнай свою цену!
+                            </p>
+                        </div>
+
+                        <NavigationTen />
+
+                        <div className={"swiper-pagination"}></div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.mainSliderCard}>
+                        <img className={styles.mainSliderAuto} src={auto}/>
+                        <div className="container">
+                            <p className={styles.mainSliderRec}>
+                                Осталось всего 10 авто!
+                            </p>
+                            <h1 className={styles.mainSliderTitle}>
+                                Грандиозная распродажа<br/>тестового парка!
+                            </h1>
+                            <p className={styles.mainSliderTEXT}>
+                                Узнай свою цену!
+                            </p>
+                        </div>
+                        <NavigationTen />
+                        <div className={"swiper-pagination"}></div>
+                    </div>
+                </SwiperSlide>
             </Swiper>
         </div>
     )

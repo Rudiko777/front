@@ -2,6 +2,10 @@ import React from "react";
 import styles from './QuickCarInstallation.module.css'
 import {carArrayOne, carArrayTwo, carArrayThree, carArrayFour, carArrayFive} from "./specialFiles";
 import {OneMark} from "./oneMark/oneMark";
+import {InputRange} from "./inputRange/inputRange";
+import {Scale} from "./scale/scale";
+import {InterBtn} from "./interactiveBtn/interBtn";
+import {ShowBtn} from "./interactiveBtn/showBtn";
 
 export const QuickCarInstallation = ()=>{
 
@@ -73,7 +77,13 @@ export const QuickCarInstallation = ()=>{
                         </div>
                     </div>
                     <div className={styles.installationInput}>
-
+                        <h3 className={styles.autoSearch}>
+                            Быстрый подбор авто
+                        </h3>
+                        <InputRange title={"Цена"}/>
+                        <Scale />
+                        <InterBtn />
+                        <ShowBtn count={73}/>
                     </div>
                 </div>
             </div>
