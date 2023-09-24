@@ -86,4 +86,9 @@
 
 .btnListItemLink{
     width: 100%;
+    display: block;
+}
+
+.btnListItemLinkActive{
+    opacity: 0.8;
 }

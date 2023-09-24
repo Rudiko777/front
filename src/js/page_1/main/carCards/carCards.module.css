@@ -1,0 +1,33 @@
+.carsInStockTitle{
+    color: #262626;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 65px;
+}
+
+.carsInStock{
+    padding-bottom: 80px;
+}
+
+.carCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.showMoreCarsBtn{
+    display: block;
+    padding: 17px 93px 16px;
+    color: #fff;
+    border: none;
+    background-color: #CA0100;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 6px;
+    margin: 0 auto;
+    cursor: pointer;
+}

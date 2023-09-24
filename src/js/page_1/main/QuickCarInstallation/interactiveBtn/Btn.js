@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styles from './interBtn.module.css'
 import point from '../../../../../images/page_1/main/pointBlack.svg'
+import cn from 'classnames'
 
 export const Btn = ({title})=>{
     const[stylePoint, setStylePoint] = useState(false)
@@ -28,17 +29,20 @@ export const Btn = ({title})=>{
                         <div className={styles.btnInsideBox}>
                             <ul className={styles.btnList}>
                                 <li className={styles.btnListItem}>
-                                    <a className={styles.btnListItemLink} href={"#"}>
+                                    <a
+                                        className={styleListBtn ? cn(styles.btnListItemLink, styles.btnListItemLinkActive) : styles.btnListItemLink}
+                                        href={"#"}
+                                        onMouseOver={handleListBtn}>
                                         A220
                                     </a>
                                 </li>
                                 <li className={styles.btnListItem}>
-                                    <a className={styles.btnListItemLink} href={"#"}>
+                                    <a className={styleListBtn ? cn(styles.btnListItemLink, styles.btnListItemLinkActive) : styles.btnListItemLink} href={"#"} onMouseOver={handleListBtn}>
                                         B567
                                     </a>
                                 </li>
                                 <li className={styles.btnListItem}>
-                                    <a className={styles.btnListItemLink} href={"#"}>
+                                    <a className={styleListBtn ? cn(styles.btnListItemLink, styles.btnListItemLinkActive) : styles.btnListItemLink} href={"#"} onMouseOver={handleListBtn}>
                                         V699
                                     </a>
                                 </li>

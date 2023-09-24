@@ -1,8 +1,6 @@
 import React from "react";
 import styles from './slider.module.css'
 import auto from '../../../../images/page_1/main/car3.png'
-import arrowLeft from '../../../../images/page_1/main/arrowleft.svg'
-import arrowRight from '../../../../images/page_1/main/arrowRight.svg'
 import '../../../../css/style.css'
 import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/css';
