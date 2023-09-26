@@ -6,6 +6,8 @@ import {A11y, Navigation, Scrollbar} from "swiper/modules";
 import backImg1 from '../../../../images/page_1/main/offerImg1.png'
 import backImg2 from '../../../../images/page_1/main/offerImg2.png'
 import backImg3 from '../../../../images/page_1/main/offerImg3.png'
+import eclipse from '../../../../images/page_1/main/eclipse.png'
+import cn from "classnames";
 
 
 export const SpecialOffers = ()=>{
@@ -28,14 +30,14 @@ export const SpecialOffers = ()=>{
                 loop={true}>
                 <SwiperSlide>
                     <div className={styles.specialOffersSLiderBox}>
-                        <div className={styles.specialOffersCard1}>
-                            <img src={backImg1} className={styles.specialOffersLogo}/>
+                        <div className={styles.specialOffersCard}>
+1
                         </div>
-                        <div className={styles.specialOffersCard1}>
-                            <img src={backImg2} className={styles.specialOffersLogo}/>
+                        <div className={styles.specialOffersCard2}>
+1
                         </div>
-                        <div className={styles.specialOffersCard1}>
-                            <img src={backImg3} />
+                        <div className={styles.specialOffersCard3}>
+1
                         </div>
                     </div>
                 </SwiperSlide>

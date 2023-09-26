@@ -9,6 +9,7 @@ import {CarCards} from "./carCards/carCards";
 import {CollectionsSlider} from "./ OurCollections/collections";
 import {CompetitorsJs} from "./ competitors/competitorsJs";
 import {SpecialOffers} from "./specialOffers/special_offers";
+import {FormPraca2} from "./formPraca4/formPraca2";
 
 
 class MainJs extends React.Component{
@@ -28,6 +29,7 @@ class MainJs extends React.Component{
                     <SideBar />
                     <Komb />
                     <Komb2 />
+                    <FormPraca2 />
                 </div>
             </>
         )
