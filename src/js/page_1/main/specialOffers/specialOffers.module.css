@@ -1,0 +1,28 @@
+.specialOffersHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.specialOffersSLiderBox{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+
+.specialOffersCard1{
+    max-width: 447px;
+    background-color: #EFF0F0;
+    border-radius: 25px;
+    position: relative;
+}
+
+.specialOffersCard2,
+.specialOffersCard3{
+
+}
+
+.specialOffersLogo{
+    content: '';
+    position: absolute;
+    right: 0;
+}

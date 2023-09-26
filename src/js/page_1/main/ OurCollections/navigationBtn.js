@@ -5,8 +5,8 @@ import arrowLeft from "../../../../images/page_1/main/arrowColLeft.svg";
 import arrowRight from "../../../../images/page_1/main/arraowColRight.svg";
 
 
-export const CollectionBtns = ()=>{
-    const swiper = useSwiper();
+export const CollectionBtns = (props)=>{
+    const swiper = props.swiper
     return(
         <div className={styles.collectionDivBtn}>
             <button  className={styles.collectionLeftBtn} onClick={() => swiper.slidePrev()}>

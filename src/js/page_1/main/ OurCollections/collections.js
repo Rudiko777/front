@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from './collections.module.css'
 import '../../../../css/style.css'
-import {Swiper, SwiperSlide} from "swiper/react";
+import {Swiper, SwiperSlide, useSwiper} from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -13,6 +13,7 @@ import {A11y, Navigation, Scrollbar} from "swiper/modules";
 
 
 export const CollectionsSlider = ()=>{
+    const[value, setValue] = useState()
     return(
         <section className={styles.collectionSlider}>
             <div className="container">
@@ -26,7 +27,7 @@ export const CollectionsSlider = ()=>{
                         </button>
                     </div>
                     <div>
-                        <CollectionBtns />
+                        <CollectionBtns swiper = {value}/>
                     </div>
                 </div>
                 <Swiper modules={[Navigation, Scrollbar, A11y]}
@@ -37,7 +38,9 @@ export const CollectionsSlider = ()=>{
                             nextEl: styles.collectionRightBtn
                         }}
                         pagination={{ clickable: true }}
-                        onSwiper={(swiper) => console.log(swiper)}
+                        onSwiper={(swiper) =>{
+                            setValue(swiper);
+                        }}
                         onSlideChange={() => console.log('slide change')}
                         loop={true}
 
