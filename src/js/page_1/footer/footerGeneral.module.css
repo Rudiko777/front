@@ -62,3 +62,25 @@
     padding: 70px 0 90px;
 
 }
+
+@media (max-width: 325px) {
+    .footerListLinks{
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        gap: 10px;
+    }
+    .footerUnderLinks{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerOffDillerFlex{
+        flex-wrap: wrap;
+    }
+    .footerDillerTXT{
+        margin: 15px 0;
+    }
+    .footerBlogs{
+        padding-bottom: 20px;
+    }
+}

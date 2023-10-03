@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderTop from "./page_1/header/header";
-import HeaderMain from "./page_1/header/header-main";
+import {HeaderMain} from "./page_1/header/header-main";
 import FooterMain from "./page_1/footer/footerGeneral";
 import MainJs from "./page_1/main/mainJs";
 

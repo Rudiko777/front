@@ -5,28 +5,62 @@ import sidebar from '../../../images/page_1/header-main/sidebar.svg'
 import NavigationMain from "./navigation";
 import {ConnectionMain} from "./connection";
 import Catalogs from "./catalogs";
+import krest from '../../../images/Auth/krest.svg'
+import {useState} from "react";
+import cn from "classnames";
 
-class HeaderMain extends React.Component{
-    render(){
-        return(
-            <>
-                <div className={"header-main-box"}>
-                    <a href={"#"} className={"header-main-sidebar-link"}>
-                        <img className={"header-main-sidebar"} src={sidebar} alt={"Sidebar"}/>
-                    </a>
-                    <div className="header-main-logo-container">
-                        <a href={"#"} className={"header-main-logo-link"}>
-                            <img className={"header-main-logo"} src={logo} alt={"Logo"}/>
-                        </a>
-                    </div>
-                    <h4 className={"header-main-advertisement"}><span className={"header-main-advertisement-time"}>10 лет</span> превосходим ваши ожидания</h4>
-                    <NavigationMain />
-                    <ConnectionMain />
+export const HeaderMain = ()=>{
+
+    const[value, setValue] = useState(false)
+
+    return(
+        <>
+            <div className={"header-main-box"}>
+                <a href={"#"} className={"header-main-sidebar-link"} onClick={()=>setValue(!value)}>
+                    <img className={"header-main-sidebar"} src={sidebar} alt={"Sidebar"}/>
+                </a>
+                <div className={value ? "leftsideMenu" : cn("leftsideMenuClose", "leftsideMenu")}>
+                    <button className={"leftsideMenuCloseBtn"} onClick={()=>setValue(!value)}>
+                        <img src={krest} alt={"Krestik"}/>
+                    </button>
+                    <ul className={"leftsideMenuList"}>
+                        <li className={"leftsideMenuItem"}>
+                            <a href={"#"}>
+                                Подбор авто
+                            </a>
+                        </li>
+                        <li className={"leftsideMenuItem"}>
+                            <a href={"#"}>
+                                О компании
+                            </a>
+                        </li>
+                        <li className={"leftsideMenuItem"}>
+                            <a href={"#"}>
+                                Техцентр
+                            </a>
+                        </li>
+                        <li className={"leftsideMenuItem"}>
+                            <a href={"#"}>
+                                Отзывы
+                            </a>
+                        </li>
+                        <li className={"leftsideMenuItem"}>
+                            <a href={"#"}>
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <Catalogs />
-            </>
-        )
-    }
+                <div className="header-main-logo-container">
+                    <a href={"#"} className={"header-main-logo-link"}>
+                        <img className={"header-main-logo"} src={logo} alt={"Logo"}/>
+                    </a>
+                </div>
+                <h4 className={"header-main-advertisement"}><span className={"header-main-advertisement-time"}>10 лет</span> превосходим ваши ожидания</h4>
+                <NavigationMain />
+                <ConnectionMain />
+            </div>
+            <Catalogs />
+        </>
+    )
 }
-
-export default HeaderMain

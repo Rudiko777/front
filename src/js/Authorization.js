@@ -2,9 +2,10 @@ import React from "react";
 import HeaderTop from "./page_1/header/header";
 import {HeaderMain} from "./page_1/header/header-main";
 import FooterMain from "./page_1/footer/footerGeneral";
+import {MainAuth} from "./Auth/MainAuth";
 
 
-export const AnyPage = ()=>{
+export const Authorization= ()=>{
     return (
         <div className={"wrapper"}>
             <header className={"header"}>
@@ -20,7 +21,7 @@ export const AnyPage = ()=>{
                 </div>
             </header>
             <main className={"main"}>
-
+                <MainAuth />
             </main>
             <footer className={"footer"}>
                 <FooterMain />

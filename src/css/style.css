@@ -340,3 +340,82 @@ a:active{
     outline: 4px solid #CA0100;
     opacity: 0.52;
 }
+
+@media (max-width: 325px) {
+    .footer-containerFluid{
+        width: 100% !important;
+    }
+    .footer-nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .header-main-box{
+        position: relative;
+    }
+    .header-top{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .header-main-sidebar{
+        width: 20px;
+        height: 14px;
+    }
+    .header-main-advertisement{
+        display: none;
+    }
+    .header-main-navigation{
+        display: none;
+    }
+    .header-main-connection{
+        display: none;
+    }
+    .header-catalogs-list{
+        display: none;
+    }
+    .header-main-sidebar-link{
+        margin: 0;
+    }
+    .interactive-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-main-logo-container:after{
+        display: none;
+    }
+    .header-catalogs{
+        display: block;
+    }
+
+    .leftsideMenu{
+        z-index: 5;
+        top: 0;
+        position: absolute;
+        background-color: #fff;
+        width: 290px;
+        transition: all 0.5s;
+    }
+    .leftsideMenuList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .leftsideMenuClose{
+        transform: translateX(-200%);
+    }
+    .leftsideMenuList li + li{
+        margin-top: 10px;
+    }
+}
+
+.leftsideMenuCloseBtn{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}

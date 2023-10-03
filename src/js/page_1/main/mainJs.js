@@ -24,12 +24,7 @@ class MainJs extends React.Component{
                 <CollectionsSlider />
                 <div className={"container"}>
                     <CompetitorsJs sales="от 10 до 25 %"/>
-                    <SpecialOffers />
                     <Reviews />
-                    <SideBar />
-                    <Komb />
-                    <Komb2 />
-                    <FormPraca2 />
                 </div>
             </>
         )
