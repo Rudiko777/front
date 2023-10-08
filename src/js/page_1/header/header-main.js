@@ -8,6 +8,7 @@ import Catalogs from "./catalogs";
 import krest from '../../../images/Auth/krest.svg'
 import {useState} from "react";
 import cn from "classnames";
+import {Link} from "react-router-dom";
 
 export const HeaderMain = ()=>{
 
@@ -52,9 +53,9 @@ export const HeaderMain = ()=>{
                     </ul>
                 </div>
                 <div className="header-main-logo-container">
-                    <a href={"#"} className={"header-main-logo-link"}>
+                    <Link to={"/"} className={"header-main-logo-link"}>
                         <img className={"header-main-logo"} src={logo} alt={"Logo"}/>
-                    </a>
+                    </Link>
                 </div>
                 <h4 className={"header-main-advertisement"}><span className={"header-main-advertisement-time"}>10 лет</span> превосходим ваши ожидания</h4>
                 <NavigationMain />

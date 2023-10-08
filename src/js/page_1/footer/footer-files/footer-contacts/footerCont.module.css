@@ -94,3 +94,15 @@
 .clockDesk{
     color: #737373 !important;
 }
+
+@media screen and (max-width: 325px){
+    .contacts{
+        width: 150px;
+    }
+    .clockDesk{
+        width: 210px;
+    }
+    .locoDescBox{
+        width: 235px;
+    }
+}

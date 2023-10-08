@@ -209,4 +209,29 @@
     font-size: 14px;
 }
 
+@media screen and (max-width: 325px){
+    .cardBox{
+        max-width: 300px;
+    }
+    .Stats{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .offer{
+        margin-top: 160px;
+    }
+    .infoPrice{
+        flex-direction: column;
+    }
 
+    .footerInfo{
+        height: 160px;
+        position: static;
+    }
+    .box1,
+    .box2,
+    .box3{
+        margin-bottom: 10px;
+        position: static;
+    }
+}

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import '../../.././css/style.css'
 import connect from '../../../images/page_1/header-main/tel.svg'
+import {Link} from "react-router-dom";
 
 
 export const ConnectionMain = ()=>{
@@ -17,7 +18,9 @@ export const ConnectionMain = ()=>{
                 </div>
             </div>
             <button className={"header-main-connection-btn"} type={"submit"} onClick={()=> setPressed(pressed + 1)}>
-                Обратный звонок
+                <Link to={"/Auth"}>
+                    Регистрация
+                </Link>
             </button>
         </div>
     )

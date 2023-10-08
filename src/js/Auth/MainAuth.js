@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import styles from './MainAuth.module.css'
 import google from '../../../src/images/Auth/Google.png'
 import apple from '../../../src/images/Auth/Apple.svg'
@@ -8,9 +8,17 @@ import formPassword from '../../../src/images/Auth/formPassword.svg'
 import noSee from '../../../src/images/Auth/formNosee.svg'
 import car1 from '../../images/Auth/pint1.png'
 import car2 from '../../images/Auth/pint2.png'
+import {CarCards} from "../page_1/main/carCards/carCards";
 
 
 export const MainAuth = ()=>{
+
+    const inputRef = useRef(null);
+
+    const handleInputRef = ()=>{
+        alert(inputRef.current.value);
+    }
+
     return(
         <>
             <div className="container">
@@ -31,7 +39,7 @@ export const MainAuth = ()=>{
                     </h2>
                     <form className={styles.form}>
                         <div className={styles.formNameBox}>
-                            <input type={"text"} className={styles.formName} placeholder={"Tom Hillson"}/>
+                            <input type={"text"} className={styles.formName} placeholder={"Tom Hillson"} ref={inputRef}/>
                             <button className={styles.formNameBtn}>
                                 <img className={styles.formNameImg} src={formName} alt={"Name"}/>
                             </button>
@@ -52,7 +60,7 @@ export const MainAuth = ()=>{
                                 <img className={styles.formNoseeImg} src={noSee} alt={"noSee"}/>
                             </button>
                         </div>
-                        <button className={styles.signUp} type={"submit"}>
+                        <button className={styles.signUp} type={"submit"} onClick={handleInputRef}>
                             SIGN UP
                         </button>
                         <p className={styles.dopInfo}>
@@ -62,24 +70,11 @@ export const MainAuth = ()=>{
                             </a>
                         </p>
                     </form>
-                    <div className={styles.CarBox}>
-                        <div className={styles.Pint1}>
-                            <img className={styles.Pint1Img} src={car1} alt={"Car"}/>
-                        </div>
-                        <h1 className={styles.PintTitle}>
-                            <a href={"#"}>Чёрная Toyota Camry 3.5</a>
-                        </h1>
-                        <div className={styles.Pint2}>
-                            <img className={styles.Pint2Img} src={car2} alt={"Car"}/>
-                        </div>
-                        <h1 className={styles.PintTitle}>
-                            <a href={"#"}>Белая Toyota Camry 3.5</a>
-                        </h1>
-                    </div>
                     {/*<img className={styles.formNameImg} src={formName} alt={"Name"}/>*/}
                     {/*<img className={styles.formEmailImg} src={formEmail} alt={"Email"}/>*/}
                     {/*<img className={styles.formPasswordImg} src={formPassword} alt={"Password"}/>*/}
                 </div>
+                <CarCards />
             </div>
         </>
     )

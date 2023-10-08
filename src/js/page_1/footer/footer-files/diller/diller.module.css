@@ -23,3 +23,17 @@
     line-height: 140%;
     text-decoration-line: underline;
 }
+
+@media screen and (max-width: 325px){
+    .footerDillerBox{
+        width: 290px;
+    }
+    .footerDillerUsers{
+        width: 100px;
+    }
+    .footerDillerLinkBox{
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+}
